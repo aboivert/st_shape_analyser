@@ -152,16 +152,12 @@ if uploaded_shapes is not None:
                     st.write("Tracé correspondant à la *shape_id* " + str(s))# + "     (key_comp:" + str(s) + ")") #debug, do not uncomment
                     plot_shape(data_to_plot, s)
     #with st.expander("Afficher les tracés ayant moins de X points de tracé en moyenne entre 2 arrêts"):
-    with st.expander("Futures implémentations"):
-        st.markdown(
-            """
-            A implémenter:
-            - Procédure de vérification par les arrêts ?
-            - Meilleur texte
-            - Voir comment la donner
-            - Rejeter mauvais fichier
-            - Menu déroulant de tous les fichiers disponibles ? pas possible das le zip, créer une nouvelle option: menu déroulant de choix de réseau, puis avec ça on pointe sur un dossier ou y'a tous les fichiers shapes extraits, pour choisir
-            """
-            )
 else:
     st.error("Veuillez choisir un fichier **shapes.txt**.", icon="🚨")
+
+#A implémenter:
+#  - Procédure de vérification par les arrêts ?
+#  - Meilleur texte
+#  - option zip ou shapes + verifs
+#  - Rejeter mauvais fichier
+#  - Menu déroulant de tous les fichiers disponibles ? pas possible das le zip, créer une nouvelle option: menu déroulant de choix de réseau, puis avec ça on pointe sur un dossier ou y'a tous les fichiers shapes extraits, pour choisir
